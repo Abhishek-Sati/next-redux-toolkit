@@ -2,7 +2,7 @@ import { connect } from 'react-redux'
 import { increment, decrement, removePosts, removeTodos, removeUsers } from '../redux/slices/countSlice'
 import Link from "next/link"
 import { getUsers, getPosts, getTodos } from "../redux/asyncActions/count"
-import { NextPageContextWithStore } from "../../5c-admin-frontend/redux-saga/utils"
+import { NextPageContextWithStore } from "../redux/utils/types"
 
 
 const IndexPage = (props) => {

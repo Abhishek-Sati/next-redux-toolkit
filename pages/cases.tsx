@@ -1,8 +1,8 @@
 import { useRouter } from "next/router"
 import { connect } from 'react-redux'
 import { increment, decrement } from '../redux/slices/countSlice'
-import { NextPageContextWithStore } from "../../5c-admin-frontend/redux-saga/utils"
 import { getUsers } from "../redux/asyncActions/count"
+import { NextPageContextWithStore } from "../redux/utils/types"
 
 const Cases = (props) => {
     const { counted, increment, decrement, users } = props
